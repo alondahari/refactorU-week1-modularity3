@@ -20,17 +20,17 @@
           <div class="instruction-answer">
             <!-- Edit here -->
             <form class="signup-form">
-              <div class="row-24">
-                <label class="column column-6">First Name</label>
-                <input class="column column-18" type="text" name="firstName">
+              <div class="row-24 cf">
+                <label class="input-label column column-4">First Name</label>
+                <input class="column column-11" type="text" name="firstName">
               </div>
-              <div class="row-24">
-                <label class="column column-6">Last Name</label>
-                <input class="column column-18" type="text" name="lastName">
+              <div class="row-24 cf">
+                <label class="input-label column column-4">Last Name</label>
+                <input class="column column-11" type="text" name="lastName">
               </div>
-              <div class="row-24">
-                <label class="column column-6">Email</label>
-                <input class="column column-18" type="email" name="email">
+              <div class="row-24 cf">
+                <label class="input-label column column-4">Email</label>
+                <input class="column column-11" type="email" name="email">
               </div>
             </form>
             <!-- End editable area -->
@@ -40,32 +40,32 @@
           <div class="instruction-answer">
             <!-- Edit here -->
             <form class="signup-form">
-              <div class="row-24">
-                <label class="column column-6">First Name</label>
-                <input class="column column-18" type="text" name="firstName">
+              <div class="row-24 cf">
+                <label class="input-label column column-4">First Name</label>
+                <input class="column column-11" type="text" name="firstName">
               </div>
-              <div class="row-24">
-                <label class="column column-6">Last Name</label>
-                <input class="column column-18" type="text" name="lastName">
+              <div class="row-24 cf">
+                <label class="input-label column column-4">Last Name</label>
+                <input class="column column-11" type="text" name="lastName">
               </div>
-              <div class="row-24">
-                <label class="column column-6">Email</label>
-                <input class="column column-18" type="email" name="email">
+              <div class="row-24 cf">
+                <label class="input-label column column-4">Email</label>
+                <input class="column column-11" type="email" name="email">
               </div>
-              <div class="row-24">
-                <label class="column column-6">City</label>
-                <input class="column column-11" type="text" name="city">
-                <label class="column column-5">State</label>
+              <div class="row-24 cf">
+                <label class="input-label column column-4">City</label>
+                <input class="column column-6" type="text" name="city">
+                <label class="input-label column column-2 push-1">State</label>
                 <input class="column column-2" type="text" name="state">
               </div>
-              <div class="row-24">
+              <div class="row-24 cf">
                 <div>
-                  <label class="column column-18"><input type="checkbox" class="signup-checkbox">Sign up for the newsletter</label>
+                  <label class="input-label column column-12"><input type="checkbox" class="signup-checkbox">Sign up for the newsletter</label>
                 </div>
               </div>
               <div>
-                <div class="row-24">
-                  <input class="column column-18 push-6 button" type="submit">
+                <div class="row-24 cf">
+                  <input class="column column-11 push-4 button" type="submit">
                 </div>
               </div>
             </form>
@@ -79,20 +79,20 @@
           <p class="instruction-text">Create styles for validated inputs and validation messages.</p>
           <div class="instruction-answer">
             <!-- Edit here -->
-            <form>
-              <div>
-                <label>First Name</label>
-                <input type="text" name="firstName" value="Pascal">
-                <span class="is-valid">✓</span>
+            <form class="signup-form">
+              <div class="row-24 cf">
+                <label class="input-label column column-4">First Name</label>
+                <input class="column column-11 input-valid" type="text" name="firstName" value="Pascal">
+                <span class="input-label column column-2 is-valid">✓</span>
               </div>
-              <div>
-                <label>Last Name</label>
-                <input type="text" name="lastName">
+              <div class="row-24 cf">
+                <label class="input-label column column-4">Last Name</label>
+                <input class="column column-11" type="text" name="lastName">
               </div>
-              <div>
-                <label>Email</label>
-                <input type="email" name="email" value="myemail@something">
-                <span class="is-invalid">Please enter a valid value.</span>
+              <div class="row-24 cf">
+                <label class="input-label column column-4">Email</label>
+                <input class="column column-11 input-invalid" type="email" name="email" value="myemail@something">
+                <span class="input-label column column-8 is-invalid">Please enter a valid value.</span>
               </div>
             </form>
             <!-- End editable area -->
@@ -105,12 +105,12 @@
           <p class="instruction-text">The textbox should be fluid, i.e. stretch to fit the available space when the window changes size. <em>Hint: Look up 3-column layouts with fluid center.</em></p>
           <div class="instruction-answer">
             <!-- Edit here -->
-            <div>
-              <label>Find groups</label>
-              <div>
-                <input placeholder="Find Groups by Title or Description">
+            <div class="search-bar">
+              <label class="input-label abs-left">Find groups</label>
+              <div class="fluid-center">
+                <input class="fill-container" placeholder="Find Groups by Title or Description">
               </div>
-              <input type="submit">
+              <input class="button-action abs-right" type="submit">
             </div>
             <!-- End editable area -->
           </div>

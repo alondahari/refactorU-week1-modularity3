@@ -5,49 +5,90 @@ body{
   font-size: 18px;
 }
 
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.fill-container{
+  width: 100%;
+}
+
 .row-24 {
-  width: 500px;
   margin: 0 0 20px 30px;
-  overflow: hidden;
+  padding-top: 2px;
 }
 
 .column{
   float: left;
 }
 
-.column-6 {
-  width: 25%;
-}
-
 .column-18 {
   width: 75%;
 }
 
-.column-8{
-  width: 33.333%;
+.column-17{
+  width: 70.8333%;
 }
 
-.column-2{
-  width: 8.333%;
+.column-16{
+  width: 66.666%;
+}
+
+.column-14{
+  width: 58.333%;
+}
+
+.column-12{
+  width: 50%;
 }
 
 .column-11{
   width: 45.833%;
 }
 
+.column-8{
+  width: 33.333%;
+}
+
+.column-6 {
+  width: 25%;
+}
+
 .column-5{
   width: 20.833%;
+}
+
+.column-4{
+  width: 16.666%;
+}
+
+.column-3{
+  width: 12.5%;
+}
+
+.column-2{
+  width: 8.333%;
 }
 
 .column-1{
   width: 4.166%;
 }
 
-.push-6{
-  margin-left: 25%;
+.push-4{
+  margin-left: 16.666%;
 }
 
-.signup-form label{
+.push-1{
+  margin-left: 4.166%;
+}
+
+.input-label{
   text-align: right;
   padding-right: 30px;
   line-height: 35px;
@@ -57,7 +98,7 @@ input{
   border-radius: 5px;
   border: 1px solid silver;
   height: 35px;
-
+  padding-left: 5px;
 }
 
 .signup-checkbox{
@@ -77,4 +118,57 @@ input{
 
 .button:active{
   background-color: #AAA;
+}
+
+/* form validation */
+.input-valid{
+  box-shadow: 0 0 3px 1px #46CC26;
+}
+
+.input-invalid{
+  box-shadow: 0 0 3px 1px #FF4B20;
+}
+
+.is-valid, .is-invalid{
+  padding: 0;
+}
+
+.is-valid{
+  color: #46CC26;
+}
+
+.is-invalid{
+  color: #FF4B20;
+}
+
+.search-bar{
+  background-color: #ddd;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid #bbb;
+  position: relative;
+}
+
+.abs-left{
+  position: absolute;
+  width: 130px;
+  left: 10px;
+}
+
+.abs-right{
+  position: absolute;
+  width: 80px;
+  right: 15px;
+  top: 10px;
+}
+
+.fluid-center{
+  margin: 0 85px 0 100px;
+}
+
+.button-action{
+  background-color: #ED828A;
+  color: white;
+  font-size: 14px;
+  height: 30px;
 }
