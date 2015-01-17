@@ -5,6 +5,10 @@ body{
   font-size: 18px;
 }
 
+a{
+  text-decoration: none;
+}
+
 .cf:before,
 .cf:after {
   content: " ";
@@ -171,4 +175,41 @@ input{
   color: white;
   font-size: 14px;
   height: 30px;
+}
+
+/* omnibox */
+.omnibox{
+  border: 1px solid silver;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.omnibox ul{
+  padding: 0;
+  float: left;
+  padding: 6px 0 0 4px;
+}
+
+.omnibox li {
+  display: inline-block;
+  background-color: #798AF0;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 2px 5px;
+  color: white;
+  border: 1px solid grey;
+}
+
+.tag-dismiss {
+  font-size: 14px;
+  color: #D4D5CC;
+  background-color: #606DBF;
+  padding: 0px 3px;
+  border-radius: 2px;
+  margin-right: 2px;
+}
+
+.omnibox-input{
+  border: none;
+  float: left;
 }
