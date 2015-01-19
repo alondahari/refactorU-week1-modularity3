@@ -6,6 +6,7 @@
     <title>CSS Modularity</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="framework.css">
+
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
@@ -139,81 +140,81 @@
           <p class="instruction-text">Create a list of items that have multiple pieces of data per row, including an icon, title, description, and favorited count.</p>
           <div class="instruction-answer">
             <!-- Edit here -->
-            <div>
+            <div class="chunky-list column column-18">
               <div>
-                <h3>Public repositories</h3>
+                <h3 class="chunky-list-header">Public repositories</h3>
               </div>
-              <ul>
-                <li >
+              <ul class="chunky-list-content">
+                <li class="chunky-list-row">
                   <a href="http://github.com/visionmedia/express" target="_blank">
                     <div>
-                      <div>9,972</div>
+                      <div class="starred">9,972</div>
                       <div>
                         <div></div>
                       </div>
                       <div>
-                        <div>express</div>
-                        <p title="Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple">Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple</p>
+                        <div class="chunky-list-item">express</div>
+                        <p class="chunky-list-description" title="Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple">Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple</p>
                       </div>
                     </div>
                   </a>
                 </li>
 
-                <li>
+                <li class="chunky-list-row">
                   <a href="http://github.com/visionmedia/jade" target="_blank">
                     <div>
-                      <div>4,854</div>
+                      <div class="starred">4,854</div>
                       <div>
                         <div></div>
                       </div>
                       <div>
-                        <div>jade</div>
-                        <p title="robust, elegant, feature rich template engine for nodejs">robust, elegant, feature rich template engine for nodejs</p>
+                        <div class="chunky-list-item">jade</div>
+                        <p class="chunky-list-description" title="robust, elegant, feature rich template engine for nodejs">robust, elegant, feature rich template engine for nodejs</p>
                       </div>
                     </div>
                   </a>
                 </li>
 
-                <li>
+                <li class="chunky-list-row">
                   <a href="http://github.com/visionmedia/mocha" target="_blank">
                     <div>
-                      <div>2,954</div>
+                      <div class="starred">2,954</div>
                       <div>
                         <div></div>
                       </div>
                       <div>
-                        <div>mocha</div>
-                        <p title="simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)">simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)</p>
+                        <div class="chunky-list-item">mocha</div>
+                        <p class="chunky-list-description" title="simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)">simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)</p>
                       </div>
                     </div>
                   </a>
                 </li>
 
-                <li >
+                <li class="chunky-list-row" >
                   <a href="http://github.com/visionmedia/get-extras" target="_blank">
                     <div>
-                      <div>2,342k</div>
+                      <div class="starred">2,342k</div>
                       <div>
                         <div></div>
                       </div>
                       <div>
-                        <div>git-extras</div>
-                        <p title="repo summary, repl, changelog population, author commit percentages and more">repo summary, repl, changelog population, author commit percentages and more</p>
+                        <div class="chunky-list-item">git-extras</div>
+                        <p class="chunky-list-description" title="repo summary, repl, changelog population, author commit percentages and more">repo summary, repl, changelog population, author commit percentages and more</p>
                       </div>
                     </div>
                   </a>
                 </li>
 
-                <li >
+                <li class="chunky-list-row" >
                   <a href="http://github.com/visionmedia/uikit" target="_blank">
                     <div>
-                      <div>1,183</div>
+                      <div class="starred">1,183</div>
                       <div>
                         <div></div>
                       </div>
                       <div>
-                        <div>uikit</div>
-                        <p title="modern ui components for the modern web">modern ui components for the modern web</p>
+                        <div class="chunky-list-item">uikit</div>
+                        <p class="chunky-list-description" title="modern ui components for the modern web">modern ui components for the modern web</p>
                       </div>
                     </div>
                   </a>
@@ -233,95 +234,95 @@ UIKit - modern ui components for the modern web-->
           <p class="instruction-text">What if we used a table for the markup instead? Style it the same as above. You should be able to use <em>nearly 100%</em> of the same classes.</p>
           <div class="instruction-answer">
             <!-- Edit here -->
-            <table>
+            <table class="chunky-list column column-18">
               <thead>
                 <tr>
                   <th>
-                    <h3>Public repositories</h3>
+                    <h3 class="chunky-list-header">Public repositories</h3>
                   </th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="chunky-list-content">
 
-                <tr >
+                <tr class="chunky-list-row">
                   <td>
                     <a href="http://github.com/visionmedia/express" target="_blank">
                       <div>
-                        <div>9,972</div>
+                        <div class="starred">9,972</div>
                         <div>
                           <div></div>
                         </div>
                         <div>
-                          <div>express</div>
-                          <p title="Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple">Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple</p>
+                          <div class="chunky-list-item">express</div>
+                          <p class="chunky-list-description" title="Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple">Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple</p>
                         </div>
                       </div>
                     </a>
                   </td>
                 </tr>
 
-                <tr >
+                <tr class="chunky-list-row">
                   <td>
                     <a href="http://github.com/visionmedia/jade" target="_blank">
                       <div>
-                        <div>4,854</div>
+                        <div class="starred">4,854</div>
                         <div>
                           <div></div>
                         </div>
                         <div>
-                          <div>jade</div>
-                          <p title="robust, elegant, feature rich template engine for nodejs">robust, elegant, feature rich template engine for nodejs</p>
+                          <div class="chunky-list-item">jade</div>
+                          <p class="chunky-list-description" title="robust, elegant, feature rich template engine for nodejs">robust, elegant, feature rich template engine for nodejs</p>
                         </div>
                       </div>
                     </a>
                   </td>
                 </tr>
 
-                <tr >
+                <tr class="chunky-list-row">
                   <td>
                     <a href="http://github.com/visionmedia/mocha" target="_blank">
                       <div>
-                        <div>2,954</div>
+                        <div class="starred">2,954</div>
                         <div>
                           <div></div>
                         </div>
                         <div>
-                          <div>mocha</div>
-                          <p title="simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)">simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)</p>
+                          <div class="chunky-list-item">mocha</div>
+                          <p class="chunky-list-description" title="simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)">simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)</p>
                         </div>
                       </div>
                     </a>
                   </td>
                 </tr>
 
-                <tr >
+                <tr class="chunky-list-row">
                   <td>
                     <a href="http://github.com/visionmedia/get-extras" target="_blank">
                       <div>
-                        <div>2,342k</div>
+                        <div class="starred">2,342k</div>
                         <div>
                           <div></div>
                         </div>
                         <div>
-                          <div>git-extras</div>
-                          <p title="repo summary, repl, changelog population, author commit percentages and more">repo summary, repl, changelog population, author commit percentages and more</p>
+                          <div class="chunky-list-item">git-extras</div>
+                          <p class="chunky-list-description" title="repo summary, repl, changelog population, author commit percentages and more">repo summary, repl, changelog population, author commit percentages and more</p>
                         </div>
                       </div>
                     </a>
                   </td>
                 </tr>
 
-                <tr >
+                <tr class="chunky-list-row">
                   <td>
                     <a href="http://github.com/visionmedia/uikit" target="_blank">
                       <div>
-                        <div>1,183</div>
+                        <div class="starred">1,183</div>
                         <div>
                           <div></div>
                         </div>
                         <div>
-                          <div>uikit</div>
-                          <p title="modern ui components for the modern web">modern ui components for the modern web</p>
+                          <div class="chunky-list-item">uikit</div>
+                          <p class="chunky-list-description" title="modern ui components for the modern web">modern ui components for the modern web</p>
                         </div>
                       </div>
                     </a>
